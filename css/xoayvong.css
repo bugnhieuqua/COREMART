@@ -1,0 +1,115 @@
+/* =============================================
+   ELECTRIC BORDER YELLOW - CARD VIỀN ĐIỆN VÀNG
+   ============================================= */
+
+.card-electric-yellow {
+  position: relative;
+  overflow: hidden;          /* Ẩn phần viền thừa */
+  border: none !important;   /* Loại bỏ border mặc định */
+  background: white !important;
+  z-index: 0;
+  border-radius: 16px;       /* Đồng bộ bo góc với card gốc */
+}
+
+/* Lớp tạo đường viền điện chạy */
+.card-electric-yellow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 3px;              /* Độ dày viền */
+  border-radius: inherit;
+  
+  /* Gradient vàng – trắng – vàng tạo cảm giác tia chớp */
+  background: repeating-linear-gradient(
+    45deg,
+    #ffcc00 0px,
+    #fff8b0 5px,
+    #ffd700 10px,
+    #ffec80 15px,
+    #ffcc00 20px
+  );
+  
+  /* Mask để chỉ hiển thị phần viền (bên ngoài content) */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  
+  /* Animation di chuyển background */
+  animation: electricFlow 1.5s linear infinite;
+  pointer-events: none;      /* Không cản trở click */
+}
+
+/* Hiệu ứng phát sáng vàng nhẹ bên ngoài */
+.card-electric-yellow::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 0%, #ffd70080, #ffaa0080, transparent 70%);
+  filter: blur(10px);
+  opacity: 0.5;
+  border-radius: inherit;
+  animation: pulseGlow 2s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Keyframes cho viền chạy */
+@keyframes electricFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+/* Keyframes nhấp nháy phát sáng */
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.3;
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 0.8;
+    filter: blur(14px);
+  }
+}
+
+/* Tăng tốc và sáng hơn khi hover */
+.card-electric-yellow:hover::before {
+  animation-duration: 0.8s;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffe600 0px,
+    #ffffff 5px,
+    #ffcc00 10px,
+    #ffffc0 15px,
+    #ffe600 20px
+  );
+}
+
+.card-electric-yellow:hover::after {
+  opacity: 0.9;
+  filter: blur(18px);
+}
+
+/* Đảm bảo nội dung bên trong không bị che */
+.card-electric-yellow .card-body,
+.card-electric-yellow .card-footer,
+.card-electric-yellow .card-img-top {
+  position: relative;
+  z-index: 2;
+  background: transparent;   /* Cho nền trắng của card lộ ra */
+}
+
+/* Giữ border-radius cho ảnh nếu cần */
+.card-electric-yellow .card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}

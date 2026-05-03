@@ -1,0 +1,397 @@
+/* CoreMart - Chủ đề Trắng & Đỏ (theo thiết kế PDF) */
+:root {
+  --core-red: #e11b1b;
+  --core-red-dark: #b01010;
+  --core-white: #ffffff;
+  --core-light-gray: #f8f9fa;
+  --core-border: #e0e0e0;
+  --core-text-dark: #1e1e1e;
+  --core-text-secondary: #5a5a5a;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/** màu background
+** tự đổi
+*/
+body {
+  background: linear-gradient(to bottom right, #CCFFFF, #FFFFFF,#00CCFF) !important;
+  color: rgb(12, 12, 12);
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.col-md-8 .text-warning,
+i {
+  color: rgb(242, 6, 6) !important;
+}
+/* * Navbar - trắng, viền đỏ nhẹ */
+.navbar {
+  background-image: linear-gradient(to bottom right, #f5bbba,#CCFFCC,#66FFFF,#FFCCCC,#FF6666);
+  border-bottom: 2px solid var(--core-red);
+  box-shadow: 0 2px 8px #ffffff;
+  font-size: 20px;
+}
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--core-red) !important;
+}
+.navbar-brand img {
+  margin-top: 0;
+  background: rgb(216, 127, 127) !important;
+  border-radius: 50px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 2px rgb(255, 255, 255);
+}
+
+.nav-link {
+  color: #ff0202 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: rgb(253, 252, 252) !important;
+}
+
+.col-md-8 .lead {
+  color: #f8f8f8 !important;
+}
+.py-5 .lead {
+  color: #f8f8f8 !important;
+}
+
+/* Hero section */
+.hero-section {
+  background: var(--core-white);
+  border-bottom: 1px solid var(--core-border);
+  padding: 3rem 0;
+  perspective: 1000px; /* Thêm không gian 3D cho hiệu ứng translateZ */
+}
+
+.hero-title {
+  color: #000000;
+  font-weight: 800;
+}
+.hero-section p,
+.hero-section {
+  color: #2c2c2c !important;
+}
+/* Buttons */
+.btn-primary {
+  background: rgb(180, 41, 41);
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(225, 27, 27, 0.2);
+}
+/** index.html
+* * button kết nối, áp dụng
+*/
+.btn-sm:hover {
+  background: rgb(4, 247, 4) !important;
+  color: red !important;
+}
+/*Chieu rong cao cua Slide*/
+.btn-primary:hover {
+  background: var(--core-red-dark);
+  box-shadow: 0 6px 14px rgba(225, 27, 27, 0.3);
+}
+.btn-outline-light {
+  border-color: #cccccc;
+  color: #2c2c2c;
+  background: white;
+  transform: translateY(-3px);
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.6),
+    0 0 0 3px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: var(--core-red);
+  border-color: var(--core-red);
+  color: white;
+}
+ul li a {
+  text-decoration: none;
+}
+/* Cards */
+.card {
+  background-color: white;
+  border: 1px solid var(--core-border);
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  border-color: var(--core-red);
+  box-shadow: 0 8px 20px rgba(225, 27, 27, 0.1);
+  transform: translateY(-4px);
+}
+/* Hiệu ứng cho ảnh trong thẻ card */
+.hero-image {
+  transition: all 0.2s; /* Làm hiệu ứng mượt mà */
+}
+
+.hero-image:hover {
+  transform: translateY(-4px); /* Nổi lên 4px, giống như thẻ card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Tăng bóng đổ để nổi bật hơn */
+}
+
+.card-img-top {
+  height: 275.469px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #eaeaea;
+}
+.price-tag {
+  color: var(--core-red);
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+  background: var(--core-light-gray);
+  border: 1px solid var(--core-border);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.filter-title {
+  color: #111;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-check-input:checked {
+  background-color: var(--core-red);
+  border-color: var(--core-red);
+}
+
+/* Badges */
+.badge.bg-primary {
+  background: var(--core-red) !important;
+  color: white;
+  font-weight: 500;
+}
+
+.badge.bg-secondary {
+  background: #e9ecef !important;
+  color: #2c2c2c;
+}
+
+.badge.bg-danger {
+  background: #b91c1c !important;
+}
+
+.badge.bg-warning {
+  background: #ffc107 !important;
+  color: #000;
+}
+
+/* Footer - tối hơn một chút (như PDF mô tả) */
+.footer {
+  background: linear-gradient(to bottom right, #4c4d4d, #050505,#333366,#003366);
+  border-top: 1px solid #333;
+  color: #ffffff;
+}
+
+.footer h5,
+.footer h6 {
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: var(--core-red);
+}
+
+/* Deal tags */
+.deal-badge {
+  background: var(--core-red);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech stat numbers */
+.tech-stat {
+  font-family: "Courier New", monospace;
+  color: var(--core-red);
+  font-weight: 700;
+}
+/**form-check*/
+.form-check label {
+  font-size: 15px;
+}
+/* Điều chỉnh dropdown, input */
+.form-control,
+.form-select {
+  border: 1px solid var(--core-border);
+  border-radius: 9px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--core-red);
+  box-shadow: 0 0 0 0.2rem rgba(225, 27, 27, 0.25);
+}
+
+.pagination .page-link {
+  color: var(--core-red);
+  border-color: var(--core-border);
+}
+
+.pagination .active .page-link {
+  background-color: var(--core-red);
+  border-color: var(--core-red);
+  color: white;
+}
+.text-secondary,
+.lead,
+.filter-sidebar .text-secondary {
+  color: #0a0a0a !important; /* Xám đậm hơn, dễ đọc trên nền trắng */
+}
+
+.text-muted {
+  color: #f5f6f7 !important;
+}
+.card-title {
+  color: #ff0000 !important;
+}
+.filter-sidebar,
+.filter-sidebar .form-check-label {
+  color: #222222 !important;
+}
+/* Carousel caption - Làm nổi bật chữ trên ảnh */
+.carousel-caption {
+  bottom: 30px;
+  background: rgba(99, 80, 80, 0.5); /* Nền đen mờ */
+  backdrop-filter: blur(4px); /* Làm mờ hậu cảnh */
+  border-radius: 12px;
+  padding: 15px 20px;
+  bottom: 20px; /* Khoảng cách từ đáy */
+  left: 13%;
+  right: 13%;
+  border-left: 4px solid #e11b1b; /* Viền đỏ bên trái cho điểm nhấn */
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--core-red);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(225, 27, 27, 0.7);
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 50%;
+}
+/*slide*/
+/* Carousel - Kích thước nhỏ gọn, tinh tế */
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  /* Bo góc nhẹ cho đẹp */
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 580px !important; /* Chiều cao cố định cho desktop */
+  background-color: #0b0f15; /* Nền tối đồng bộ theme */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Hiển thị toàn bộ ảnh, không cắt */
+  background-color: #feffff;
+}
+
+/* Responsive: nhỏ hơn trên mobile */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 200px;
+  }
+}
+/*Phu hop cho thiet bi may mobile*/
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+  .carousel-caption {
+    padding: 10px;
+  }
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+}
+.row .g-4 {
+  padding-top: 20px;
+}
+.row .g-4 img {
+  height: 275.469px;
+}
+.btn-outline-secondary {
+  color: rgb(119, 34, 34);
+}
+/*
+* support -- css
+*/
+.card-body h5 {
+  color: rgb(211, 7, 7) !important;
+}
+.card-body p {
+  color: #f5f3f3 !important;
+}
+.row .col-md-4 .card-body {
+  background: rgb(168, 116, 116);
+  border-radius: 15px;
+}
+/* *index */
+.text-center h6 {
+  color: #000 !important;
+}
+.col-lg-9 p {
+  color: rgb(238, 233, 233) !important;
+}
+.filter-sidebar {
+  background-color: wheat !important;
+  border-radius: 5px;
+}
+.form-label.fw-semibold.text-white {
+  color: rgb(5, 5, 5) !important;
+}

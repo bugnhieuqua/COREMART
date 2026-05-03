@@ -1,0 +1,32 @@
+/** trang khuyến mãi - FIXED BODY BACKGROUND */
+/*
+*deals
+*/
+.khuyenmai .card-body {
+  background: rgb(255, 255, 255) !important;
+}
+.khuyenmai .card-body p {
+  color: rgb(0, 0, 0) !important;
+}
+.g-4 {
+  margin-top: 20px;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+} 
+.mb-4 {
+  animation: fade-in 1s ease-out;
+}
+.card-body .col-md-8 p {
+  color: rgb(243, 242, 242) !important;
+}
+.hero-section {
+  background: linear-gradient(to bottom right, #ffffff, #ccffcc,#FF66CC) !important;
+}

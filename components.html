@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreMart - Linh kiện Hiệu Suất</title>
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/linkkien.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <!-- Logo CoreMart -->
+          <img
+            src="images/Logo.png"
+            alt="CoreMart"
+            width="80"
+            height="80"
+            class="d-inline-block align-middle me-2"
+          />
+          COREMART
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="pc.html">PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Laptop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="components.html">Linh kiện</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="deals.html">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Hỗ trợ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Về chúng tôi</a>
+            </li>
+            <!-- Icon user + cart -->
+            <!-- Icon user + cart -->
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="#"><i class="far fa-user fa-lg"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  style="font-size: 0.65rem"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <h1
+          class="mb-4"
+          style="
+            font-family: &quot;Quicksand&quot;, sans-serif;
+            font-weight: bold;
+          "
+        >
+          LINH KIỆN HIỆU SUẤT
+        </h1>
+        <p class="lead text-secondary mb-5">
+          Lựa chọn cốt lõi cho cỗ máy của bạn. Các đơn vị xử lý được thiết kế
+          chính xác và các mô-đun bộ nhớ độ trễ cực thấp cho tính toán tần số
+          cao.
+        </p>
+
+        <!-- Thanh công cụ -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <p class="mb-0">
+            <span class="fw-bold">THỐNG KÊ DANH MỤC 42</span> sản phẩm
+          </p>
+          <div>
+            <a href="#" class="btn btn-outline-light me-2">MỞ BẢNG SO SÁNH</a>
+            <a href="#" class="btn btn-outline-secondary">Linh kiện sẵn hàng</a>
+          </div>
+        </div>
+        <!-- Carousel Slider -->
+        <div
+          id="demoCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-slide="3000"
+        >
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demoCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demoCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demoCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://i.pinimg.com/1200x/17/31/8c/17318c175ebd803916913f8295166526.jpg"
+                class="d-block w-100"
+                alt="CoreMart Precision"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold text-white">
+                  KỸ NGHỆ CHO HIỆU SUẤT TỐI THƯỢNG
+                </h5>
+                <p class="text-white" style="color: white !important">
+                  Sự tinh thông kỹ thuật kết hợp với thẩm mỹ hoàn hảo.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://i.pinimg.com/1200x/ac/e9/b4/ace9b4ec075c9ad8e9aa99323b411524.jpg"
+                class="d-block w-100"
+                alt="Máy tính hiện đại"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold text-white">MÁY TÍNH HIỆN ĐẠI</h5>
+                <p class="text-white" style="color: white !important">
+                  RTX 4090 24GB - Core i9-14900K - 64GB DDR5
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://i.pinimg.com/736x/5a/6b/ea/5a6bea2335350d196e89a565c09d1e14.jpg"
+                class="d-block w-100"
+                alt="Linh kiện chính hãng"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold text-white">LINH KIỆN HIỆU SUẤT CAO</h5>
+                <p class="text-white" style="color: white !important">
+                  Bảo hành 36 tháng - Hỗ trợ kỹ thuật 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demoCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demoCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br />
+        <br />
+        <!-- Danh sách linh kiện -->
+        <div class="row g-4">
+          <!-- Intel Core i9-14900K -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/cf/1d/ca/cf1dca70570ce34ba1616077df1d5526.jpg"
+                class="card-img-top"
+                alt="Intel Core i9-14900K"
+              />
+              <div class="card-body">
+                <h5 class="card-title">INTEL CORE i9-14900K</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-microchip me-2"></i>24 Nhân / 32 Luồng
+                  </li>
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Xung nhịp tối đa
+                    6.0 GHz
+                  </li>
+                  <li>
+                    <i class="fas fa-database me-2"></i>Bộ nhớ đệm (L2+L3) 68 MB
+                  </li>
+                </ul>
+                <div class="price-tag mt-3">14.990.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMINATOR TITANIUM DDR5 64GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/68/6c/e3/686ce335be03fb4c577c6a766730af1b.jpg"
+                class="card-img-top"
+                alt="Dominator Titanium DDR5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">DOMINATOR TITANIUM DDR5 64GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 7200
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL34</li>
+                  <li><i class="fas fa-bolt me-2"></i>Điện áp 1.45V</li>
+                </ul>
+                <div class="price-tag mt-3">9.500.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AMD RYZEN 9 7950X3D -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="assets/images/Margin-1.png"
+                class="card-img-top"
+                alt="AMD Ryzen 9 7950X3D"
+              />
+              <div class="card-body">
+                <h5 class="card-title">AMD RYZEN 9 7950X3D</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-microchip me-2"></i>16 Nhân / 32 Luồng
+                  </li>
+                  <li>
+                    <i class="fas fa-database me-2"></i>Bộ nhớ đệm L3 128 MB
+                  </li>
+                  <li><i class="fas fa-microchip me-2"></i>Kiến trúc Zen 4</li>
+                </ul>
+                <div class="price-tag mt-3">18.500.00 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- G.SKILL TRIDENT Z5 DDR5 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/c4/d8/9e/c4d89e3c67090d4177ed46b32053093c.jpg"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">G.SKILL TRIDENT Z5 DDR5 32GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6400
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL32</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 2×16GB</li>
+                </ul>
+                <div class="price-tag mt-3">3.990.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- RAM DESKTOP KINGSTO FURY BEAST RGB 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://bizweb.dktcdn.net/thumb/grande/100/440/968/products/60394-ram-desktop-kingston-fury-beast-black-64gb2.jpg?v=1757844516073"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  RAM DESKTOP KINGSTO FURY BEAST RGB 32GB
+                </h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền
+                    5600MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CL36</li>
+                  <li>
+                    <i class="fas fa-memory me-2"></i>Dung lượng 32Gb (2x16GB)
+                  </li>
+                </ul>
+                <div class="price-tag mt-3">11.500.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- RAM PC KINGSTON FURY BEAST BLASK EXPO 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://bizweb.dktcdn.net/thumb/grande/100/440/968/products/60915-ram-pc-kingston-fury-beast-black-expo-32gb-2x16gb-ddr5-6000mhz-kf560c36bbe2k2-32.jpg?v=1760020681070"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  RAM PC KINGSTON FURY BEAST BLASK EXPO 32GB
+                </h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6000
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CL36</li>
+                  <li>
+                    <i class="fas fa-memory me-2"></i>Dung lượng 32Gb (2x16GB)
+                  </li>
+                </ul>
+                <div class="price-tag mt-3">11.900.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- RAM PC KINGAX 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://bizweb.dktcdn.net/thumb/1024x1024/100/440/968/products/61993-ram-pc-kingmax-32gb-ddr5-5600-mhz-2.jpg?v=1769611020643"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RAM PC KINGAX 32GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 5600
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL40</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 32GB</li>
+                </ul>
+                <div class="price-tag mt-3">11.300.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- RAM PC KINGMAX HORIZON 16GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://bizweb.dktcdn.net/thumb/grande/100/440/968/products/61789-ram-pc-kingmax-horizon-32gb-ddr5-6000-mhz-jpg-v-1774964138843.jpg?v=1774965551140"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RAM PC KINGMAX HORIZON 16GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6400
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL32</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 2×16GB</li>
+                </ul>
+                <div class="price-tag mt-3">5.850.000 đ</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- G.SKILL TRIDENT Z5 DDR5 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/c4/d8/9e/c4d89e3c67090d4177ed46b32053093c.jpg"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">G.SKILL TRIDENT Z5 DDR5 32GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6400
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL32</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 2×16GB</li>
+                </ul>
+                <div class="price-tag mt-3">$189.50</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- G.SKILL TRIDENT Z5 DDR5 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/c4/d8/9e/c4d89e3c67090d4177ed46b32053093c.jpg"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">G.SKILL TRIDENT Z5 DDR5 32GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6400
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL32</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 2×16GB</li>
+                </ul>
+                <div class="price-tag mt-3">$189.50</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- G.SKILL TRIDENT Z5 DDR5 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/c4/d8/9e/c4d89e3c67090d4177ed46b32053093c.jpg"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">G.SKILL TRIDENT Z5 DDR5 32GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6400
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL32</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 2×16GB</li>
+                </ul>
+                <div class="price-tag mt-3">$189.50</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- G.SKILL TRIDENT Z5 DDR5 32GB -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://i.pinimg.com/736x/c4/d8/9e/c4d89e3c67090d4177ed46b32053093c.jpg"
+                class="card-img-top"
+                alt="G.Skill Trident Z5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">G.SKILL TRIDENT Z5 DDR5 32GB</h5>
+                <p class="card-text">
+                  <span class="badge bg-secondary">BẢO HÀNH 36 THÁNG</span>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="fas fa-tachometer-alt me-2"></i>Tốc độ truyền 6400
+                    MT/s
+                  </li>
+                  <li><i class="fas fa-clock me-2"></i>Độ trễ CAS CL32</li>
+                  <li><i class="fas fa-memory me-2"></i>Dung lượng 2×16GB</li>
+                </ul>
+                <div class="price-tag mt-3">$189.50</div>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <button class="btn btn-outline-primary w-100">
+                  THÊM VÀO DÀN MÁY
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gói linh kiện Precision Engine (Trang 3) -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="card bg-dark border-info">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3 class="text-info">GÓI LINH KIỆN PRECISION ENGINE</h3>
+                    <p style="color: beige !important">
+                      Tiết kiệm $120 khi kết hợp bất kỳ CPU Intel thế hệ thứ 14
+                      nào với các bộ nhớ DDR5 7000+ được chọn lọc. Bao gồm lắp
+                      đặt chuyên nghiệp.
+                    </p>
+                    <p
+                      class="text-warning"
+                      style="color: rgb(255, 0, 0) !important"
+                    >
+                      <i class="fas fa-tag me-2"></i>LỰA CHỌN CỦA NHÀ TÍCH HỢP
+                      HỆ THỐNG
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <a href="#" class="btn btn-primary btn-lg"
+                      >CẤU HÌNH COMBO</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4">
+      <!-- Copy footer từ index -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="text-white">COREMART</h5>
+            <p class="small">
+              Phần cứng chính xác cho tính toán hiệu suất cao và máy trạm doanh
+              nghiệp.
+            </p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-white">CHÍNH SÁCH</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Thông tin giao hàng</a></li>
+              <li><a href="#">Bảo hành</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-white">DỊCH VỤ</h6>
+            <ul class="list-unstyled small">
+              <li><a href="support.html">Hỗ trợ kỹ thuật</a></li>
+              <li><a href="#">Cài đặt Cookie</a></li>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 class="text-white">BẢN TIN</h6>
+            <div class="input-group input-group-sm">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="NHẬP EMAIL"
+              />
+              <button class="btn btn-primary" type="button">THAM GIA</button>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="row">
+          <div class="col-md-6 small">
+            &copy; 2026 COREMART PRECISION ENGINE. BẢO LƯU MỌI QUYỀN.
+          </div>
+          <div class="col-md-6 text-md-end small">
+            <span>SỐ SÁNH 3 MT/C</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
