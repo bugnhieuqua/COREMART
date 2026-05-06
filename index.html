@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreMart - Laptop Hiệu Suất</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/xoayvong.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      #text {
+        font-size: 20px;
+      }
+      #filter {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(179, 7, 7),
+          rgb(255, 198, 198)
+        );
+        box-shadow: 0px 12px 24px black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/Logo.png"
+            alt="CoreMart"
+            width="80"
+            height="80"
+            class="d-inline-block align-middle me-2"
+          />
+          COREMART
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="pc.html">PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Laptop</a>
+            </li>
+            <div class="btn-group">
+              <a class="nav-link" href="components.html">Linh kiện</a>
+              <button
+                type="button"
+                class="btn btn-red dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="components.html">Linh kiện</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="deals.html">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Hỗ trợ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="#"><i class="far fa-user fa-lg"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  style="font-size: 0.65rem"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title mb-3">KỸ NGHỆ CHO HIỆU SUẤT</h1>
+            <p class="lead text-secondary">
+              Sự tinh thông kỹ thuật kết hợp với thẩm mỹ hoàn hảo.<br />
+              Trải nghiệm bước tiến tiếp theo của máy tính hiệu năng cao với
+              CoreMart.
+            </p>
+            <a href="about.html" class="btn btn-primary btn-lg me-2"
+              ><i class="fas fa-microchip me-2"></i>Về chúng tôi</a
+            >
+            <a href="pc.html" class="btn btn-outline-light btn-lg"
+              >Xem PC bán chạy</a
+            >
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img
+              src="https://i.pinimg.com/1200x/41/96/47/41964785c12b73d8a72364a1d8cbe119.jpg"
+              alt="CoreMart PC"
+              class="img-fluid hero-image"
+              style="
+                border-radius: 10px;
+                box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3);
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel Slider -->
+    <div
+      id="demoCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demoCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demoCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demoCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://i.pinimg.com/1200x/44/e9/92/44e99266589b2b0f9d4d22c3f7b1911c.jpg"
+            class="d-block w-100"
+            alt="CoreMart Precision"
+            weight="500"
+            height="300"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold text-white">KỸ NGHỆ CHO HIỆU SUẤT TỐI THƯỢNG</h5>
+            <p class="text-white">
+              Sự tinh thông kỹ thuật kết hợp với thẩm mỹ hoàn hảo.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pcmag.com/imagery/articles/06iNuDKOEZGrY4HqIoAxpOC-5.fit_lim.size_960x.png"
+            class="d-block w-100"
+            alt="Laptop Gaming"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold text-white">LAPTOP GAMING</h5>
+            <p class="text-white">Khám phá thông số kỹ thuật vượt trội.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/1200x/2e/25/a9/2e25a9f71bc402ef5babc62b5f9a586c.jpg"
+            class="d-block w-100"
+            alt="Laptop Văn Phòng"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold text-white">LAPTOP VĂN PHÒNG</h5>
+            <p class="text-white">Tiện lợi – Gọn nhẹ – Tối ưu hiệu suất.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demoCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demoCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sidebar Filter -->
+          <div class="col-lg-3">
+            <div
+              class="filter-sidebar"
+              id="filter"
+              style="border-radius: 8px !important"
+            >
+              <h5 class="filter-title">
+                <i class="fas fa-sliders-h me-2"></i>Bộ lọc
+              </h5>
+              <div class="mb-4">
+                <label class="form-label fw-semibold text-white" id="label"
+                  >■ THƯƠNG HIỆU</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="brandCoreMart"
+                    checked
+                  />
+                  <label class="form-check-label" for="brandCoreMart"
+                    >COREMART SIGNATURE</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="brandAsus"
+                  />
+                  <label class="form-check-label" for="brandAsus"
+                    >ASUS ROG</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="brandMsi"
+                  />
+                  <label class="form-check-label" for="brandMsi"
+                    >MSI DRAGON</label
+                  >
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold text-white" id="label"
+                  >PHÂN KHÚC</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="segOffice"
+                  />
+                  <label class="form-check-label" for="segOffice"
+                    >VĂN PHÒNG</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="segGaming"
+                    checked
+                  />
+                  <label class="form-check-label" for="segGaming"
+                    >ĐỒ HỌA / GAMING</label
+                  >
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold text-white" id="label"
+                  >KHOẢNG GIÁ</label
+                >
+                <input
+                  type="range"
+                  class="form-range"
+                  min="10000000"
+                  max="100000000"
+                  step="1000000"
+                  id="priceRange"
+                />
+
+                <div class="d-flex justify-content-between mt-2">
+                  <span>10.000.000₫</span>
+                  <span>100.000.000₫</span>
+                </div>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-light btn-sm">Áp dụng</button>
+              </div>
+              <hr class="my-4 border-secondary" />
+              <div class="text-center">
+                <i class="fas fa-headset fa-2x text-info mb-2"></i>
+                <h6 class="text-white" id="label">TƯ VẤN CHUYÊN MÔN</h6>
+                <p class="small text-secondary">
+                  Liên hệ kỹ sư hệ thống của chúng tôi để cấu hình máy theo nhu
+                  cầu riêng.
+                </p>
+                <a
+                  href="support.html"
+                  class="btn btn-sm btn-primary w-100"
+                  style="
+                    border-radius: 10px !important;
+                    margin-bottom: 9px;
+                    background-color: red;
+                  "
+                  >KẾT NỐI NGAY</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="col-lg-9">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <p class="mb-0 text-secondary" style="color: black !important">
+                HIỆN THỊ 12/48 SẢN PHẨM
+              </p>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  SẮP XẾP: MỚI NHẤT
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Mới nhất</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Giá thấp đến cao</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Giá cao đến thấp</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Nexus X16 Pro -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://cdn.hstatic.net/products/200000722513/30240_laptop_acer_swift_go_14_ai_5e239b3b4c754dd6b117ee346bc10a41_master.png"
+                    class="card-img-top"
+                    alt="Nexus X16 Pro"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">NEXUS X16 PRO</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1">RTX 4080 Mobile</span>
+                      <span class="badge bg-secondary">Core i9-14900HX</span>
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-memory me-2"></i>32GB DDR5 5600MHz
+                      </li>
+                      <li><i class="fas fa-tv me-2"></i>16" 4K OLED 240Hz</li>
+                    </ul>
+                    <div class="price-tag mt-3">65.990.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Obsidian Core Elite -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://product.hstatic.net/200000722513/product/ava_ded8eaa81f5f4850a4f6fea27adc83b2_master.png"
+                    class="card-img-top"
+                    alt="Obsidian Core Elite Laptop"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Acer Nitro ProPanel</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1"
+                        >RTX 4070 Ti Super</span
+                      >
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li><i class="fas fa-memory me-2"></i>32GB DDR5</li>
+                      <li>
+                        <i class="fas fa-hdd me-2"></i>512GB PCIe NVMe SED
+                      </li>
+                    </ul>
+                    <div class="price-tag mt-3">31.790.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ASUS ExpertBook -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://cdn.hstatic.net/products/200000722513/laptop-asus-expertbook-p1403cva-c3u08-50w-1_731bd2b40fba4760aaa43822bd8ab0ad_master.jpg"
+                    class="card-img-top"
+                    alt="ASUS ExpertBook"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Laptop ASUS ExpertBook</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1">Intel Graphics</span>
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-microchip me-2"></i>Intel Core 3 100U
+                      </li>
+                      <li><i class="fas fa-memory me-2"></i>8GB DDR4</li>
+                    </ul>
+                    <div class="price-tag mt-3">13.100.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4">
+              <!-- MSI Katana 15 B13V -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_11__2_50.png"
+                    class="card-img-top"
+                    alt="MSI Katana 15 B13V"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">MSI Katana 15 B13V</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1">RTX 4060</span>
+                      <span class="badge bg-secondary"
+                        >Intel Core i7-13620H</span
+                      >
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-memory me-2"></i>16GB DDR5 5200MHz
+                      </li>
+                      <li><i class="fas fa-tv me-2"></i>16" 4K OLED 240Hz</li>
+                    </ul>
+                    <div class="price-tag mt-3">27.990.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MSI Prestige 13 AI -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://product.hstatic.net/200000722513/product/ava_f4961f3432f84674b7d37c5fbeb3aa17_master.png"
+                    class="card-img-top"
+                    alt="MSI Prestige 13 AI"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">MSI Prestige 13 AI</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1"
+                        >Intel Core Ultra 7 155H</span
+                      >
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li><i class="fas fa-memory me-2"></i>32GB DDR5</li>
+                      <li><i class="fas fa-hdd me-2"></i>2TB Gen5 NVMe</li>
+                    </ul>
+                    <div class="price-tag mt-3">32.990.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ASUS ExpertBook -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://cdn.hstatic.net/products/200000722513/laptop-asus-expertbook-p1403cva-c5h16-50w-2_cab5574ec49941478c187028f560edf8_master.jpg"
+                    class="card-img-top"
+                    alt="ASUS ExpertBook"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">ASUS ExpertBook</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1">Intel® Core™ 5</span>
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-microchip me-2"></i>Intel® UHD Graphics
+                      </li>
+                      <li><i class="fas fa-memory me-2"></i>RAM 16GB DDR5</li>
+                    </ul>
+                    <div class="price-tag mt-3">22.290.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4">
+              <!-- ASUS ExpertBook B3 Flip -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://dlcdnwebimgs.asus.com/gain/13171c2d-3e77-4aa5-aec3-e620b0b8392f/w534/w801/fwebp"
+                    class="card-img-top"
+                    alt="ASUS ExpertBook B3 Flip"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">ASUS ExpertBook B3 Flip</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1"> Intel® Core™ 7</span>
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-memory me-2"></i>32GB DDR5 5600MHz
+                      </li>
+                      <li><i class="fas fa-tv me-2"></i>16" 4K OLED 240Hz</li>
+                    </ul>
+                    <div class="price-tag mt-3">32.590.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ROG Flow Z13 (2025) -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://dlcdnwebimgs.asus.com/gain/34C1E26D-F64A-4B4F-8DAC-6C168F7C90E2"
+                    class="card-img-top"
+                    alt="ROG Flow Z13 (2025)"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">ROG Flow Z13 (2025)</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1"
+                        >AMD Radeon™ 8060S Graphics</span
+                      >
+                      <span class="badge bg-secondary"
+                        >bộ vi xử lý AMD Ryzen™
+                      </span>
+                    </p>
+
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-memory me-2"></i>RAM 128GB LPDDR5X
+                        8000MT/s
+                      </li>
+                      <li><i class="fas fa-hdd me-2"></i>SSD 1TB PCIe 4.0</li>
+                    </ul>
+                    <div class="price-tag mt-3">90.490.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Acer Nitro V Gaming Laptop -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-electric-yellow">
+                  <img
+                    src="https://i.pinimg.com/736x/8d/f8/6b/8df86b94e1d451b91f7bf79bfb982eba.jpg"
+                    class="card-img-top"
+                    alt="Acer Nitro V Gaming Laptop"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Acer Nitro V Gaming Laptop</h5>
+                    <p class="card-text">
+                      <span class="badge bg-primary me-1">RTX 4090 Mobile</span>
+                    </p>
+                    <ul class="list-unstyled small text-secondary">
+                      <li>
+                        <i class="fas fa-microchip me-2"></i>Intel Core i5 12th
+                        Gen
+                      </li>
+                      <li>
+                        <i class="fas fa-memory me-2"></i>NVIDIA GeForce RTX
+                        3050
+                      </li>
+                    </ul>
+                    <div class="price-tag mt-3">97.500.000₫</div>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <button class="btn btn-outline-primary w-100">
+                      Cấu hình ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pagination -->
+            <nav class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#">Trước</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="index.html">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="laptop2.html">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="laptop3.html">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="laptop2.html">Sau</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="text-white" style="font-weight: bold !important">
+              COREMART
+            </h5>
+            <p
+              style="font-size: 18px !important; font-weight: normal !important"
+            >
+              Phần cứng chuyên nghiệp dành cho các nhà sáng tạo, kỹ sư và những
+              người đam mê ưu tú. Được chế tạo cho tương lai của điện toán.
+            </p>
+          </div>
+          <div class="col-md-2 mb-3" id="text">
+            <h6 class="text-white">HỖ TRỢ</h6>
+            <ul class="list-unstyled small">
+              <li><a href="support.html">Hỗ trợ kỹ thuật</a></li>
+              <li><a href="#">Bảo hành</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3" id="text">
+            <h6 class="text-white">THÔNG TIN</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">Thông tin giao hàng</a></li>
+              <li><a href="#">Cài đặt Cookie</a></li>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 class="text-white">BẢN TIN KỸ THUẬT</h6>
+            <div class="input-group input-group-sm">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="NHẬP EMAIL"
+              />
+              <button class="btn btn-primary" type="button">THAM GIA</button>
+            </div>
+            <div id="social-icons">
+              <i class="fab fa-facebook fa-lg me-3 mt-3"></i>
+              <i class="fab fa-twitter fa-lg me-3 mt-3"></i>
+              <i class="fab fa-instagram fa-lg me-3 mt-3"></i>
+              <i class="fab fa-linkedin fa-lg me-3 mt-3"></i>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="row">
+          <div class="col-md-6 small">
+            &copy; 2026 COREMART PRECISION ENGINE. BẢO LƯU MỌI QUYỀN.
+          </div>
+          <div class="col-md-6 text-md-end small">
+            <a href="#" class="me-3">Chính sách bảo mật</a>
+            <a href="#">Sơ đồ trang</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
