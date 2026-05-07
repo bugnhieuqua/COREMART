@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreMart - Khuyến mãi & Combo</title>
+
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/deals.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/Logo.png"
+            alt="CoreMart"
+            width="80"
+            height="80"
+            class="d-inline-block align-middle me-2"
+          />
+          COREMART
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="pc.html">PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Laptop</a>
+            </li>
+            <div class="btn-group">
+              <a class="nav-link" href="components.html">Linh kiện</a>
+              <button
+                type="button"
+                class="btn btn-red dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden" id="menu">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">RAM</a></li>
+                <li><a class="dropdown-item" href="#">CPU</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ổ cứng</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Bàn phím-Chuột</a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="deals.html">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Hỗ trợ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="#"><i class="far fa-user fa-lg"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  style="font-size: 0.65rem"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section py-5">
+      <div class="container">
+        <h1 class="mb-4">KHUYẾN MÃI ĐẶC BIỆT</h1>
+
+        <!-- Ưu đãi hot -->
+        <div class="row mb-5">
+          <div class="col-md-6 mb-4">
+            <div class="card bg-dark border-danger h-100">
+              <div class="card-body">
+                <h2 class="text-danger">
+                  <i class="fas fa-fire me-2"></i>ƯU ĐÃI CÓ HẠN
+                </h2>
+                <p style="color: beige !important">
+                  Giảm ngay 5% cho tất cả đơn hàng máy trạm Titan V3 khi đặt
+                  trước.
+                </p>
+                <a href="pc.html" class="btn btn-danger">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card bg-dark border-warning h-100">
+              <div class="card-body">
+                <h2 class="text-warning">
+                  <i class="fas fa-star me-2"></i>ƯU ĐÃI HOT
+                </h2>
+                <p style="color: beige !important">
+                  Tặng kèm bàn di chuột CoreMart Precision khi mua laptop Nexus
+                  X16 Pro.
+                </p>
+                <a href="index.html" class="btn btn-warning">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div
+          id="demoCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demoCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demoCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demoCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://pcmarket.vn/media/banner/PCM-021.jpg"
+                class="d-block w-100"
+                alt="CoreMart Precision"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold text-white">BUILD PC GAMING</h5>
+                <p class="text-white" style="color: white !important">
+                  Sự tinh thông kỹ thuật kết hợp với thẩm mỹ hoàn hảo.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://pcmarket.vn/media/banner/PCM-061.jpg"
+                class="d-block w-100"
+                alt="Máy trạm Titan V3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold text-white">ƯU ĐÃI CỰC KHỦNG</h5>
+                <p class="text-white" style="color: white !important">
+                  lên đến 2 triệu VNĐ
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://pcmarket.vn/media/banner/BNW.png"
+                class="d-block w-100"
+                alt="Linh kiện chính hãng"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold text-white">THOẢI MÁI ĐỔI TRẢ</h5>
+                <p class="text-white" style="color: white !important">
+                  sao phải lăn tăn
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demoCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demoCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Combo linh kiện Precision Engine -->
+        <div class="row my-5">
+          <div class="col-12">
+            <div class="card bg-dark border-info">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3 class="text-info">GÓI LINH KIỆN PRECISION ENGINE</h3>
+                    <p class="lead">
+                      Tiết kiệm $120 khi kết hợp CPU Intel thế hệ 14 với RAM
+                      DDR5 7000+ chọn lọc. Bao gồm lắp đặt chuyên nghiệp.
+                    </p>
+                    <p class="text-warning">
+                      <i class="fas fa-check-circle me-2"></i>LỰA CHỌN CỦA NHÀ
+                      TÍCH HỢP HỆ THỐNG
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <a href="components.html" class="btn btn-primary btn-lg"
+                      >CẤU HÌNH COMBO</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--** slide cho san pham-->
+        <div class="sale">
+          <div class="danhmucnoibat">
+            <h1>Danh mục nổi bật</h1>
+            <!-- Danh mục nổi bật -->
+            <div
+              class="row justify-content-center align-items-stretch gx-3 gy-4"
+            >
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="card h-100">
+                  <img
+                    src="https://i.pinimg.com/736x/87/bc/17/87bc17a97b5396dd11288a37ae2fbf57.jpg"
+                    class="card-img-top"
+                    alt="RAM"
+                  />
+                  <div
+                    class="card-body d-flex align-items-center justify-content-center"
+                  >
+                    <p class="card-text mb-0">RAM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="card h-100">
+                  <img
+                    src="https://i.pinimg.com/1200x/75/93/72/7593726427f4125978831ad0189c5836.jpg"
+                    class="card-img-top"
+                    alt="SSD"
+                  />
+                  <div
+                    class="card-body d-flex align-items-center justify-content-center"
+                  >
+                    <p class="card-text mb-0">SSD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="card h-100">
+                  <img
+                    src="https://i.pinimg.com/1200x/cc/ab/11/ccab11852ccc1fb80b7989883f96c922.jpg"
+                    class="card-img-top"
+                    alt="PC"
+                  />
+                  <div
+                    class="card-body d-flex align-items-center justify-content-center"
+                  >
+                    <p class="card-text mb-0">PC</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="card h-100">
+                  <img
+                    src="https://i.pinimg.com/1200x/bb/50/29/bb5029cbc819e1c2e7a7f67383699cdb.jpg"
+                    class="card-img-top"
+                    alt="GPU"
+                  />
+                  <div
+                    class="card-body d-flex align-items-center justify-content-center"
+                  >
+                    <p class="card-text mb-0">GPU</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="card h-100">
+                  <img
+                    src="https://i.pinimg.com/1200x/fe/f7/b3/fef7b3cbaeb59afc974ab04dd20741e6.jpg"
+                    class="card-img-top"
+                    alt="Laptop"
+                  />
+                  <div
+                    class="card-body d-flex align-items-center justify-content-center"
+                  >
+                    <p class="card-text mb-0">Laptop</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- Ưu đãi theo sản phẩm -->
+      <div class="uudaitheosanpham">
+        <h3 class="mb-4" style="font-weight: bold">ƯU ĐÃI THEO SẢN PHẨM</h3>
+        <!--* slide cho sản phẩm-->
+        <div
+          id="pcCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/1200x/fb/1a/d6/fb1ad6ba51c126f3a97a4750431466a2.jpg"
+                      class="card-img-top"
+                      alt="Asus vivobook"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Asus vivobook</h5>
+                      <p>
+                        Mua kèm màn hình CoreMart 32" 4K 144Hz chỉ thêm
+                        12.000.000₫
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >23.900.000₫</span
+                        >
+                        <span class="price-tag">21.500.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/47/45/ce/4745cebaa65c0545e90281fd948ea632.jpg"
+                      class="card-img-top"
+                      alt="Lenovo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo</h5>
+                      <p>
+                        Tặng kèm Office 2024 Professional Plus khi mua laptop.
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >34.490.000₫</span
+                        >
+                        <span class="price-tag">30.990.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/c7/25/4f/c7254f44b1819556ba81c915f7f78e3e.jpg"
+                      class="card-img-top"
+                      alt="Obsidian Core Elite"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Obsidian Core Elite</h5>
+                      <p>
+                        Nâng cấp miễn phí lên RAM 64GB DDR5 (trị giá 3.500.000₫)
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >54.990.000₫</span
+                        >
+                        <span class="price-tag">50.000.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/1200x/f0/31/4d/f0314d272760240f8cf0bcc9a6cb5abb.jpg"
+                      class="card-img-top"
+                      alt="Titan V3 + Màn hình 4K"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Titan V3 + Màn hình 4K</h5>
+                      <p>
+                        Mua kèm màn hình CoreMart 32" 4K 144Hz chỉ thêm
+                        12.000.000₫
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >119.900.000₫</span
+                        >
+                        <span class="price-tag">109.500.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/1200x/f0/31/4d/f0314d272760240f8cf0bcc9a6cb5abb.jpg"
+                      class="card-img-top"
+                      alt="Nexus X16 Pro + Office"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Nexus X16 Pro + Office</h5>
+                      <p>
+                        Tặng kèm Office 2024 Professional Plus khi mua laptop.
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >72.990.000₫</span
+                        >
+                        <span class="price-tag">65.990.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/7a/e0/f7/7ae0f7ff6bd5ede456c81adc772518b4.jpg"
+                      class="card-img-top"
+                      alt="Obsidian Core Elite"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Obsidian Core Elite</h5>
+                      <p>
+                        Nâng cấp miễn phí lên RAM 64GB DDR5 (trị giá 3.500.000₫)
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >54.990.000₫</span
+                        >
+                        <span class="price-tag">50.000.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/97/fa/79/97fa7964d2aba9e754773dba89dd48dc.jpg"
+                      class="card-img-top"
+                      alt="Titan V3 + Màn hình 4K"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Titan V3 + Màn hình 4K</h5>
+                      <p>
+                        Mua kèm màn hình CoreMart 32" 4K 144Hz chỉ thêm
+                        12.000.000₫
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >119.900.000₫</span
+                        >
+                        <span class="price-tag">109.500.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/5f/5d/09/5f5d09cd1d3babaffe0226b588a7f0f6.jpg"
+                      class="card-img-top"
+                      alt="Lenovo legion i5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo legion i5</h5>
+                      <p>
+                        Tặng kèm Office 2024 Professional Plus khi mua laptop.
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >72.990.000₫</span
+                        >
+                        <span class="price-tag">65.990.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/1200x/fa/e0/ed/fae0eda7108992b9501bff398bfe2a0c.jpg"
+                      class="card-img-top"
+                      alt="Asus ROG"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Asus ROG</h5>
+                      <p>
+                        Nâng cấp miễn phí lên RAM 64GB DDR5 (trị giá 3.500.000₫)
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >54.990.000₫</span
+                        >
+                        <span class="price-tag">50.000.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/1200x/df/8b/c8/df8bc81afb3df8bafb18e5b11a02267b.jpg"
+                      class="card-img-top"
+                      alt="Alienware m18 Gaming Laptop"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Alienware m18 Gaming Laptop</h5>
+                      <p>
+                        Mua kèm màn hình CoreMart 32" 4K 144Hz chỉ thêm
+                        12.000.000₫
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >119.900.000₫</span
+                        >
+                        <span class="price-tag">109.500.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/ca/84/24/ca8424c9d509c43df9374533b7e9f37e.jpg"
+                      class="card-img-top"
+                      alt="Area-laptop"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Area-laptop</h5>
+                      <p>
+                        Tặng kèm Office 2024 Professional Plus khi mua laptop.
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >72.990.000₫</span
+                        >
+                        <span class="price-tag">65.990.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://i.pinimg.com/736x/b7/a3/81/b7a381bd9fe4f38160ec92555578859d.jpg"
+                      class="card-img-top"
+                      alt="asus..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">asus...</h5>
+                      <p>
+                        Nâng cấp miễn phí lên RAM 64GB DDR5 (trị giá 3.500.000₫)
+                      </p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >54.990.000₫</span
+                        >
+                        <span class="price-tag">50.000.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#pcCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#pcCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--Ưu đãi theo RAM-->
+      <div class="uudaitheosanpham">
+        <h3 class="mb-4" style="font-weight: bold">RAM ƯU ĐÃI</h3>
+        <!--* slide cho sản phẩm-->
+        <div
+          id="pcCarouselRam"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_265_1_.png"
+                      class="card-img-top"
+                      alt="RAM Laptop Kingston 1.2V 8GB 3200MHz KVR32S22S8/8"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        RAM Laptop Kingston 1.2V 8GB 3200MHz KVR32S22S8/8
+                      </h5>
+                      <p>SO-DIMM DDR4, phù hợp laptop phổ thông.</p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >3.490.000₫</span
+                        >
+                        <span class="price-tag">2.490.000₫</span>
+                      </div>
+                      <span class="badge bg-danger">Giảm 29%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_265_3_.png"
+                      class="card-img-top"
+                      alt="RAM Laptop Kingston Sodimm 1.2V 16GB 3200MHz CL22"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        RAM Laptop Kingston Sodimm 1.2V 16GB 3200MHz CL22
+                      </h5>
+                      <p>Ram laptop hiệu năng cao, tiêu chuẩn 3200MHz.</p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >5.990.000₫</span
+                        >
+                        <span class="price-tag">3.990.000₫</span>
+                      </div>
+                      <span class="badge bg-danger">Giảm 33%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_317_2_.png"
+                      class="card-img-top"
+                      alt="RAM PC ADATA XPG D50 RGB 16GB (1x16GB) 3200MHz DDR4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        RAM PC ADATA XPG D50 RGB 16GB (1x16GB) 3200MHz DDR4
+                      </h5>
+                      <p>DDR4 RGB, phù hợp build PC gamer và workstation.</p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >6.290.000₫</span
+                        >
+                        <span class="price-tag">4.290.000₫</span>
+                      </div>
+                      <span class="badge bg-danger">Giảm 32%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/a/ram-transcend-ddr5-4800mhz-16gb_1_.png"
+                      class="card-img-top"
+                      alt="RAM Laptop Transcend DDR5 4800MHz 16GB"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        RAM Laptop Transcend DDR5 4800MHz 16GB
+                      </h5>
+                      <p>DDR5 mới, tốc độ cao cho laptop gaming và đồ họa.</p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >8.990.000₫</span
+                        >
+                        <span class="price-tag">6.490.000₫</span>
+                      </div>
+                      <span class="badge bg-danger">Giảm 28%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/a/ram-laptop-kingston-ddr4-3200mhz-8gb-kvr32s22s8-8wp_1_.png"
+                      class="card-img-top"
+                      alt="RAM Laptop Kingston DDR4 3200Mhz 8GB KVR32S22S8/8WP"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        RAM Laptop Kingston DDR4 3200Mhz 8GB KVR32S22S8/8WP
+                      </h5>
+                      <p>Giải pháp tiết kiệm cho nâng cấp RAM laptop cơ bản.</p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >3.490.000₫</span
+                        >
+                        <span class="price-tag">2.490.000₫</span>
+                      </div>
+                      <span class="badge bg-danger">Giảm 29%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_297_2.png"
+                      class="card-img-top"
+                      alt="RAM PC Kingston Fury DDR5 6000MHz 16GB (1*16) KF560C36BBE2-16WP"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        RAM PC Kingston Fury DDR5 6000MHz 16GB (1x16)
+                      </h5>
+                      <p>DDR5 tốc độ cao cho PC chơi game và render.</p>
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="text-muted text-decoration-line-through"
+                          >9.490.000₫</span
+                        >
+                        <span class="price-tag">7.290.000₫</span>
+                      </div>
+                      <span class="badge bg-danger">Giảm 23%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#pcCarouselRam"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#pcCarouselRam"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="text-white" style="font-weight: bold !important">
+              COREMART
+            </h5>
+            <p
+              style="font-size: 18px !important; font-weight: normal !important"
+            >
+              Phần cứng chuyên nghiệp dành cho các nhà sáng tạo, kỹ sư và những
+              người đam mê ưu tú. Được chế tạo cho tương lai của điện toán.
+            </p>
+          </div>
+          <div class="col-md-2 mb-3" id="text">
+            <h6 class="text-white">HỖ TRỢ</h6>
+            <ul class="list-unstyled small">
+              <li><a href="support.html">Hỗ trợ kỹ thuật</a></li>
+              <li><a href="#">Bảo hành</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3" id="text">
+            <h6 class="text-white">THÔNG TIN</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">Thông tin giao hàng</a></li>
+              <li><a href="#">Cài đặt Cookie</a></li>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 class="text-white">BẢN TIN KỸ THUẬT</h6>
+            <div class="input-group input-group-sm">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="NHẬP EMAIL"
+              />
+              <button class="btn btn-primary" type="button">THAM GIA</button>
+            </div>
+            <div id="social-icons">
+              <i class="fab fa-facebook fa-lg me-3 mt-3"></i>
+              <i class="fab fa-twitter fa-lg me-3 mt-3"></i>
+              <i class="fab fa-instagram fa-lg me-3 mt-3"></i>
+              <i class="fab fa-linkedin fa-lg me-3 mt-3"></i>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="row">
+          <div class="col-md-6 small">
+            &copy; 2026 COREMART PRECISION ENGINE. BẢO LƯU MỌI QUYỀN.
+          </div>
+          <div class="col-md-6 text-md-end small">
+            <a href="#" class="me-3">Chính sách bảo mật</a>
+            <a href="#">Sơ đồ trang</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
