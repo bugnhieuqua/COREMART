@@ -3,7 +3,7 @@
 *deals
 */
 .hero-section {
-  background-image: url("https://i.pinimg.com/736x/a6/f8/91/a6f8919b007974774830dedebc2c887c.jpg") !important;
+  background-image: url("https://i.pinimg.com/1200x/14/01/25/1401256df4d81b17b6d34fb107fb2adb.jpg") !important;
   color: rgb(12, 12, 12);
   font-family: "Creepster", Static;
   font-size: 20px;
@@ -63,20 +63,7 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.danhmucnoibat h1 {
-  margin: 20px 0px 20px 20px;
-  padding-top: 0px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  background-color: rgb(212, 142, 142);
-  width: 330px !important;
-  height: 50px !important;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.2);
-}
+
 .danhmucnoibat .card {
   width: 100%;
   max-width: 12rem;
@@ -93,6 +80,7 @@
   object-fit: cover;
   box-shadow: none;
   border-radius: 10px;
+  margin-top:20px;
 }
 .danhmucnoibat .card .card-body {
   background-image: none !important;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Về CoreMart - Kỹ nghệ tối ưu hiệu suất</title>
-    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/LG.png" type="image/png" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/about.css" />
@@ -20,13 +20,13 @@
 
       .thanhvien h1 {
         margin-top: 30px !important;
-        color: rgb(255, 0, 0) !important;
+        color: rgb(163, 0, 0) !important;
         font-size: 2.5rem;
         font-weight: bold;
       }
       .thanhvien p {
         font-family: "Pirata One", sans-serif;
-        color: rgb(255, 0, 0) !important;
+        color: rgb(163, 0, 0) !important;
       }
       .col-md-4 .card-title {
         color: rgb(255, 255, 255) !important;
@@ -35,27 +35,34 @@
         color: rgb(255, 255, 255) !important;
       }
       .py-5 .card-title {
-        color:red !important;
+        color: rgb(0, 0, 0) !important;
         font-weight: bold !important;
       }
-      .py-5 .card-text{
-        color:black !important;
+      .py-5 .card-text {
+        color: black !important;
+      }
+      .py-5 h1,
+      .py-5 h2,
+      .py-5 h4 {
+        color: black !important;
+        font-weight: bold;
+      }
+      .thanhvien .card-body .fab .fa-facebook {
+        margin-top: 35px !important;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <!-- Logo CoreMart -->
           <img
-            src="images/Logo.png"
+            src="images/LG.png"
             alt="CoreMart"
             width="80"
             height="80"
             class="d-inline-block align-middle me-2"
           />
-          COREMART
         </a>
         <button
           class="navbar-toggler"
@@ -65,6 +72,23 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div id="search">
+          <form class="d-flex" role="search" id="" search>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Tìm kiếm sản phẩm..."
+              aria-label="Search"
+            />
+            <button
+              id="btn-outline-success"
+              class="btn btn-outline-success"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item">
@@ -81,7 +105,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="visually-hidden" id="menu">Toggle Dropdown</span>
+                <span class="visually-hidden">Toggle Dropdown</span>
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">RAM</a></li>
@@ -102,8 +126,6 @@
             <li class="nav-item">
               <a class="nav-link active" href="about.html">Về chúng tôi</a>
             </li>
-            <!-- Icon user + cart -->
-            <!-- Icon user + cart -->
             <li class="nav-item ms-2">
               <a class="nav-link" href="#"><i class="far fa-user fa-lg"></i></a>
             </li>
@@ -229,7 +251,7 @@
 
         <div class="backgr p-4 rounded-4 mb-5">
           <div class="loihua">
-            <h4 style="color: rgb(255, 0, 0)">LỜI HỨA TỪ CORE</h4>
+            <h4 style="color: rgb(163, 0, 0) !important">LỜI HỨA TỪ CORE</h4>
             <p style="color: rgb(0, 0, 0) !important">
               Chất lượng không phải là một bộ phận; đó là bản sắc của chúng tôi.
               Mọi cỗ máy COREMART đều mang dấu ấn xuất sắc về kỹ thuật, được đảm
@@ -254,7 +276,7 @@
           </div>
         </div>
         <div class="thanhvien">
-          <h1>THÀNH VIÊN CỦA CORE</h1>
+          <h1 style="color: rgb(163, 0, 0) !important">THÀNH VIÊN CỦA CORE</h1>
           <!--* slide thành viên-->
           <div
             id="pcCarousel"
@@ -272,11 +294,13 @@
                       <img
                         src="images/thang.png"
                         class="card-img-top"
-                        alt="thang"
+                        alt="Nguyễn Đại Thắng"
                       />
                       <div class="card-body">
                         <h5 class="card-title">Nguyễn Đại Thắng</h5>
-                        <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+                        <a href="#" class="btn btn-primary" id="lienhengay"
+                          >Liên hệ ngay</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -292,7 +316,9 @@
 
                       <div class="card-body">
                         <h5 class="card-title">Nguyễn Bá Bổng</h5>
-                        <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+                        <a href="#" class="btn btn-primary" id="lienhengay"
+                          >Liên hệ ngay</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -308,11 +334,13 @@
                       <img
                         src="images/cow.png"
                         class="card-img-top"
-                        alt="cow"
+                        alt="Cow Thị Như Quỳnh"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Cow Thị Như Quỳnh</h5>
-                        <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+                        <h5 class="card-title">Cow Thị Quỳnh Như</h5>
+                        <a href="#" class="btn btn-primary" id="lienhengay"
+                          >Liên hệ ngay</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -324,10 +352,16 @@
                   <!-- Card 1 -->
                   <div class="col-md-4 col-lg-4">
                     <div class="card h-100">
-                      <img src="" class="card-img-top" alt="PC 1" />
+                      <img
+                        src="images/duc.png"
+                        class="card-img-top"
+                        alt="Đức"
+                      />
                       <div class="card-body">
                         <h5 class="card-title">Nguyễn Huy Anh Đức</h5>
-                        <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+                        <a href="#" class="btn btn-primary" id="lienhengay"
+                          >Liên hệ ngay</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -336,14 +370,16 @@
                   <div class="col-md-4 col-lg-4">
                     <div class="card h-100">
                       <img
-                        src="https://i.pinimg.com/1200x/c2/e8/f2/c2e8f254614da162a918c985ae39f616.jpg"
+                        src="images/duy.png"
                         class="card-img-top"
-                        alt="PC 2"
+                        alt="Duy"
                       />
 
                       <div class="card-body">
                         <h5 class="card-title">Nguyễn Tài Duy</h5>
-                        <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+                        <a href="#" class="btn btn-primary" id="lienhengay"
+                          >Liên hệ ngay</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -358,7 +394,9 @@
 
                       <div class="card-body">
                         <h5 class="card-title">VY KHANG</h5>
-                        <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+                        <a href="#" class="btn btn-primary" id="lienhengay"
+                          >Liên hệ ngay</a
+                        >
                       </div>
                     </div>
                   </div>
