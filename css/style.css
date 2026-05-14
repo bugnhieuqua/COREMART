@@ -34,16 +34,17 @@ i {
  * Để chuyển đổi giữa các tùy chọn, hãy comment/uncomment các khối background-image và box-shadow bên dưới.
  */
 
-
+/* Override navbar to match MDIGI-style background (rounded white pill) */
 .navbar {
   background-image: url("https://server.wallpaperalchemy.com/storage/wallpapers/2303/windows-11-abstract-pink-swirl-4k-wallpaper.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border: none !important;
-  padding: 0.9rem 1rem; 
-  min-height: 120px; 
-  overflow: visible; 
+  /* margin: 20px 40px 0 40px; */
+  padding: 0.9rem 1rem; /* increased vertical padding to make navbar taller */
+  min-height: 120px; /* reserve height so navbar doesn't collapse when logo is absolutely positioned */
+  overflow: visible; /* allow logo shadow to be visible outside navbar box */
   box-shadow:
     0 12px 30px rgba(14, 23, 34, 0.08),
     0 4px 12px rgba(28, 49, 73, 0.04);
@@ -86,13 +87,8 @@ i {
 }
 #btn-outline-success{
   color:rgb(255, 255, 255) !important;
-  border-color: #ff0000 !important;
+  border-color: #e9ecef !important;
 
-}
-#btn-outline-success:hover{
-  color:rgb(255, 0, 0) !important;
-  border-color: #ffffff !important;
-  background: none !important;
 }
 .navbar .navbar-brand img {
   margin-top: 5px;
