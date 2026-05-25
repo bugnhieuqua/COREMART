@@ -113,3 +113,20 @@
 .uudaitheosanpham .price-tag {
   color: rgb(0, 225, 255) !important;
 }
+.uudaitheosanpham .card-img-top{
+  height:  190px !important;
+}
+/* Fix badge bị cắt trong carousel RAM */
+#pcCarouselRam .card {
+  overflow: visible !important;
+}
+
+#pcCarouselRam .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#pcCarouselRam .card-body .badge {
+  align-self: flex-start;
+  margin-top: auto;
+}

@@ -78,13 +78,6 @@
     transform: translateY(0);
   }
 }
-.hero-title::after {
-  content: "TỐI THƯỢNG";
-  display: block;
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-right:40px ;
-}
 #label{
   color: #ffffff !important;
 }
